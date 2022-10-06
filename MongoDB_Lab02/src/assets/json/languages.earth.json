@@ -1,0 +1,461 @@
+{
+        "results" : [
+                {
+                        "_id" : "dz",
+                        "value" : 70
+                },
+                {
+                        "_id" : "zh",
+                        "value" : 283
+                },
+                {
+                        "_id" : "hu",
+                        "value" : 283
+                },
+                {
+                        "_id" : "eu",
+                        "value" : 215
+                },
+                {
+                        "_id" : "ka",
+                        "value" : 268
+                },
+                {
+                        "_id" : "nn",
+                        "value" : 283
+                },
+                {
+                        "_id" : "de",
+                        "value" : 283
+                },
+                {
+                        "_id" : "te",
+                        "value" : 284
+                },
+                {
+                        "_id" : "th",
+                        "value" : 283
+                },
+                {
+                        "_id" : "wal",
+                        "value" : 130
+                },
+                {
+                        "_id" : "tig",
+                        "value" : 130
+                },
+                {
+                        "_id" : "tg",
+                        "value" : 2
+                },
+                {
+                        "_id" : "en",
+                        "value" : 300
+                },
+                {
+                        "_id" : "mr",
+                        "value" : 284
+                },
+                {
+                        "_id" : "gl",
+                        "value" : 282
+                },
+                {
+                        "_id" : "oc",
+                        "value" : 104
+                },
+                {
+                        "_id" : "mt",
+                        "value" : 275
+                },
+                {
+                        "_id" : "ln",
+                        "value" : 112
+                },
+                {
+                        "_id" : "eo",
+                        "value" : 225
+                },
+                {
+                        "_id" : "sw",
+                        "value" : 80
+                },
+                {
+                        "_id" : "zu",
+                        "value" : 1
+                },
+                {
+                        "_id" : "km",
+                        "value" : 179
+                },
+                {
+                        "_id" : "ar",
+                        "value" : 280
+                },
+                {
+                        "_id" : "fur",
+                        "value" : 277
+                },
+                {
+                        "_id" : "ms",
+                        "value" : 239
+                },
+                {
+                        "_id" : "kw",
+                        "value" : 1
+                },
+                {
+                        "_id" : "es",
+                        "value" : 282
+                },
+                {
+                        "_id" : "so",
+                        "value" : 108
+                },
+                {
+                        "_id" : "my",
+                        "value" : 211
+                },
+                {
+                        "_id" : "hy",
+                        "value" : 199
+                },
+                {
+                        "_id" : "tt",
+                        "value" : 1
+                },
+                {
+                        "_id" : "si",
+                        "value" : 1
+                },
+                {
+                        "_id" : "rw",
+                        "value" : 1
+                },
+                {
+                        "_id" : "fi",
+                        "value" : 283
+                },
+                {
+                        "_id" : "as",
+                        "value" : 17
+                },
+                {
+                        "_id" : "haw",
+                        "value" : 20
+                },
+                {
+                        "_id" : "trv",
+                        "value" : 23
+                },
+                {
+                        "_id" : "ha",
+                        "value" : 3
+                },
+                {
+                        "_id" : "to",
+                        "value" : 131
+                },
+                {
+                        "_id" : "gez",
+                        "value" : 129
+                },
+                {
+                        "_id" : "om",
+                        "value" : 12
+                },
+                {
+                        "_id" : "ne",
+                        "value" : 280
+                },
+                {
+                        "_id" : "ia",
+                        "value" : 178
+                },
+                {
+                        "_id" : "lv",
+                        "value" : 282
+                },
+                {
+                        "_id" : "ru",
+                        "value" : 283
+                },
+                {
+                        "_id" : "tr",
+                        "value" : 283
+                },
+                {
+                        "_id" : "pt",
+                        "value" : 282
+                },
+                {
+                        "_id" : "el",
+                        "value" : 283
+                },
+                {
+                        "_id" : "gv",
+                        "value" : 1
+                },
+                {
+                        "_id" : "sid",
+                        "value" : 11
+                },
+                {
+                        "_id" : "fil",
+                        "value" : 254
+                },
+                {
+                        "_id" : "ta",
+                        "value" : 284
+                },
+                {
+                        "_id" : "mn",
+                        "value" : 10
+                },
+                {
+                        "_id" : "nl",
+                        "value" : 283
+                },
+                {
+                        "_id" : "yo",
+                        "value" : 3
+                },
+                {
+                        "_id" : "he",
+                        "value" : 282
+                },
+                {
+                        "_id" : "pa",
+                        "value" : 3
+                },
+                {
+                        "_id" : "fr",
+                        "value" : 283
+                },
+                {
+                        "_id" : "da",
+                        "value" : 282
+                },
+                {
+                        "_id" : "sa",
+                        "value" : 1
+                },
+                {
+                        "_id" : "se",
+                        "value" : 265
+                },
+                {
+                        "_id" : "et",
+                        "value" : 280
+                },
+                {
+                        "_id" : "cy",
+                        "value" : 269
+                },
+                {
+                        "_id" : "ja",
+                        "value" : 283
+                },
+                {
+                        "_id" : "nds",
+                        "value" : 279
+                },
+                {
+                        "_id" : "bg",
+                        "value" : 283
+                },
+                {
+                        "_id" : "be",
+                        "value" : 264
+                },
+                {
+                        "_id" : "ca",
+                        "value" : 282
+                },
+                {
+                        "_id" : "kn",
+                        "value" : 284
+                },
+                {
+                        "_id" : "ku",
+                        "value" : 2
+                },
+                {
+                        "_id" : "ky",
+                        "value" : 1
+                },
+                {
+                        "_id" : "ml",
+                        "value" : 284
+                },
+                {
+                        "_id" : "sl",
+                        "value" : 283
+                },
+                {
+                        "_id" : "is",
+                        "value" : 283
+                },
+                {
+                        "_id" : "ro",
+                        "value" : 283
+                },
+                {
+                        "_id" : "vi",
+                        "value" : 269
+                },
+                {
+                        "_id" : "dv",
+                        "value" : 1
+                },
+                {
+                        "_id" : "fa",
+                        "value" : 282
+                },
+                {
+                        "_id" : "ps",
+                        "value" : 63
+                },
+                {
+                        "_id" : "gsw",
+                        "value" : 283
+                },
+                {
+                        "_id" : "lt",
+                        "value" : 282
+                },
+                {
+                        "_id" : "sk",
+                        "value" : 284
+                },
+                {
+                        "_id" : "kok",
+                        "value" : 1
+                },
+                {
+                        "_id" : "or",
+                        "value" : 284
+                },
+                {
+                        "_id" : "hi",
+                        "value" : 284
+                },
+                {
+                        "_id" : "cs",
+                        "value" : 284
+                },
+                {
+                        "_id" : "bn",
+                        "value" : 284
+                },
+                {
+                        "_id" : "ii",
+                        "value" : 11
+                },
+                {
+                        "_id" : "ko",
+                        "value" : 282
+                },
+                {
+                        "_id" : "uk",
+                        "value" : 283
+                },
+                {
+                        "_id" : "kk",
+                        "value" : 2
+                },
+                {
+                        "_id" : "kl",
+                        "value" : 1
+                },
+                {
+                        "_id" : "ga",
+                        "value" : 263
+                },
+                {
+                        "_id" : "ur",
+                        "value" : 199
+                },
+                {
+                        "_id" : "sq",
+                        "value" : 157
+                },
+                {
+                        "_id" : "pl",
+                        "value" : 283
+                },
+                {
+                        "_id" : "sv",
+                        "value" : 283
+                },
+                {
+                        "_id" : "byn",
+                        "value" : 130
+                },
+                {
+                        "_id" : "syr",
+                        "value" : 1
+                },
+                {
+                        "_id" : "uz",
+                        "value" : 12
+                },
+                {
+                        "_id" : "bs",
+                        "value" : 5
+                },
+                {
+                        "_id" : "it",
+                        "value" : 281
+                },
+                {
+                        "_id" : "mk",
+                        "value" : 282
+                },
+                {
+                        "_id" : "hr",
+                        "value" : 283
+                },
+                {
+                        "_id" : "nb",
+                        "value" : 282
+                },
+                {
+                        "_id" : "lo",
+                        "value" : 197
+                },
+                {
+                        "_id" : "az",
+                        "value" : 281
+                },
+                {
+                        "_id" : "sr",
+                        "value" : 283
+                },
+                {
+                        "_id" : "am",
+                        "value" : 267
+                },
+                {
+                        "_id" : "af",
+                        "value" : 211
+                },
+                {
+                        "_id" : "bo",
+                        "value" : 188
+                },
+                {
+                        "_id" : "gu",
+                        "value" : 284
+                },
+                {
+                        "_id" : "id",
+                        "value" : 245
+                },
+                {
+                        "_id" : "fo",
+                        "value" : 276
+                }
+        ],
+        "ok" : 1
+}
