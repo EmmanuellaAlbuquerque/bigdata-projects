@@ -1,10 +1,92 @@
+<center>
+Universidade Federal da Paraíba – Campus I Centro de Informática
+</center>
 
-1.
+<center>
+Departamento de Informática
+</center>
+
+### Big Data: conceitos e aplicações 
+
+#### Laboratório 5: Modelo Orientado a Grafos
+
+Aluna: Emmanuella Faustino Albuquerque
+
+-----------------------------------------------------------
+
+## 1. Cypher Introduction - Social Movie Database
+
+### Tipos de relacionamentos do dataset
+
 **Entrada** (.cypher)
 
-**Saída**
+Com base nos nós, retorna o tipo de relacionamento de cada um deles.
 
-![myImage](assets/create_node.png)
+```sql
+MATCH (n)-[r]->()
+RETURN type(r), count(*);
+```
+
+**Saída** (.json)
+
+```json
+[
+  {
+    "type(r)": "ACTED_IN",
+    "count(*)": 172
+  },
+  {
+    "type(r)": "DIRECTED",
+    "count(*)": 44
+  },
+  {
+    "type(r)": "PRODUCED",
+    "count(*)": 15
+  },
+  {
+    "type(r)": "WROTE",
+    "count(*)": 10
+  },
+  {
+    "type(r)": "FOLLOWS",
+    "count(*)": 3
+  },
+  {
+    "type(r)": "REVIEWED",
+    "count(*)": 9
+  }
+]
+```
+
+**Entrada** (.cypher)
+```sql
+MATCH (n)
+RETURN "Hello Graph with "+count(*)+" Nodes!"
+as welcome;
+```
+
+**Saída** (.json)
+
+```json
+[
+  {
+    "welcome": "Hello Graph with 171 Nodes!"
+  }
+]
+```
+
+### Primeiros passos com Cypher
+
+**Entrada** (.cypher)
+
+Retornando as informações de um nó filme específico.
+
+```sql
+MATCH (movie:Movie {title:"The Matrix"})
+RETURN movie;
+```
+
+**Saída**
 
 ```js
 // node properties
@@ -12,6 +94,116 @@
 released: 1999
 tagline: Welcome to the Real World
 title: The Matrix
+```
+
+![myImage](assets/create_node.png)
+
+**Entrada**
+
+Retornando somente as informações necessárias na consulta de um filme específico.
+
+```sql
+MATCH (movie:Movie {title:"The Matrix"})
+RETURN movie.id, movie.title;
+```
+
+**Saída**
+
+```json
+[
+  {
+    "movie.id": null,
+    "movie.title": "The Matrix"
+  }
+]
+```
+
+**Entrada**
+
+Retornando somente os atores que atuaram em um filme específico.
+
+OBS: Ator é um nó com aresta não incidente, ou seja, uma aresta que saí dele (ator) e chega no filme. E o filme, possui uma aresta incidente, já que a aresta chega nele.  
+
+```sql
+MATCH (m:Movie {title:"The Matrix"})<-[:ACTED_IN]-(actor)
+RETURN actor;
+```
+
+**Saída**
+
+![myImage](assets/actors.png)
+
+**Entrada**
+
+Retornando o nome do ator que atuou em um filme específico.
+
+```sql
+MATCH (m:Movie {title:"The Matrix"})<-[:ACTED_IN]-(actor)
+RETURN actor.name order by actor.name;
+```
+
+**Saída**
+
+```json
+[
+  {
+    "actor.name": "Carrie-Anne Moss"
+  },
+  {
+    "actor.name": "Emil Eifrem"
+  },
+  {
+    "actor.name": "Hugo Weaving"
+  },
+  {
+    "actor.name": "Keanu Reeves"
+  },
+  {
+    "actor.name": "Laurence Fishburne"
+  }
+]
+```
+
+**Entrada**
+
+Retornando o número de atores que atuaram em um filme específico.
+
+```sql
+MATCH (m:Movie {title:"The Matrix"})<-[:ACTED_IN]-(actor)
+RETURN count(*);
+```
+
+**Saída**
+
+```json
+[
+  {
+    "count(*)": 5
+  }
+]
+```
+
+**Entrada**
+
+Retornando o nome dos atores (terminados em s) que atuaram em um filme específico.
+
+```sql
+MATCH (m:Movie {title:"The Matrix"})<-[:ACTED_IN]-(actor)
+WHERE actor.name =~ ".*s$"
+RETURN actor.name;
+```
+
+**Saída**
+
+```json
+[
+  {
+    "actor.name": "Carrie-Anne Moss"
+  },
+  {
+    "actor.name": "Keanu Reeves"
+  }
+]
 ```
 
 ## 2. Músicos e Músicas gravadas (n-n)
@@ -165,9 +357,9 @@ SET hendrix.data_de_nascimento = '1942-11-27'
 ```
 
 - Excluindo um atributo
-```js
-<id>: 1
-nome: Jimi Hendrix
+```sql
+MATCH (hendrix:Musico {nome: 'Jimi Hendrix'})
+SET hendrix.data_de_nascimento = null
 ```
 
 - Excluindo um nó
@@ -238,3 +430,26 @@ RETURN m
 ```
 
 ![myImage](assets/london_employees.png)
+
+### Referências Bibliográficas
+
+<br>
+
+[1] Employees.csv. Disponível em:
+https://github.com/neo4j-documentation/developer-resources/blob/gh-pages/data/northwind/employees.csv. Acesso em: 03 de novembro de 2022.
+
+<br>
+
+[2] Sandbox Neo4j. Disponível em:
+https://sandbox.neo4j.com/. Acesso em: 03 de novembro de 2022.
+
+<br>
+
+[3] Cypher Introduction - Social Movie Database. Disponível em:
+https://neo4j.com/graphgists/cypher-introduction-social-movie-database/. Acesso em: 03 de novembro de 2022.
+
+<br>
+
+[4] First Steps Neo4j. Disponível em:
+https://lvdamacenoblog.wordpress.com/2018/06/29/first-steps-neo4j/. Acesso em: 03 de novembro de 2022.
+
