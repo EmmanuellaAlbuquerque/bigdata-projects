@@ -1,6 +1,6 @@
-### Querys do Dashboard: [xml.query(SPL)](src\dashboard.xml)
+### Querys do Dashboard: [xml.query(SPL)](src/dashboard.xml)
 
-### Relatório: [PDF](docs\Relatorio_Splunk_Lab07.pdf)
+### Relatório: [PDF](docs/Relatorio_Splunk_Lab07.pdf)
 
 ### Configurações
 - Settings » Add Data
@@ -12,5 +12,5 @@
 
 Automatic lookups Config:
 
-![Lookup Definition](assets\images\autolookup_prices.png)
+![Lookup Definition](assets/images/autolookup_prices.png)
 
